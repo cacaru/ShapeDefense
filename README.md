@@ -9,8 +9,7 @@
 
 ## 🛠 Tech Stack
 - Unity 2024.6
-- ```csharp 
-- Git / Unity Collaborate
+- C#
 
 
 ## 📱 다운로드
