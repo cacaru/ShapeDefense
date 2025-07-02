@@ -9,7 +9,7 @@
 
 ## 🛠 Tech Stack
 - Unity 2022.x
-- ``C# (이벤트 시스템, FSM, 코루틴)
+- C# (이벤트 시스템, FSM, 코루틴)
 - Git / Unity Collaborate
 
 
