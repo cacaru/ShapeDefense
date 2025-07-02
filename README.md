@@ -8,8 +8,8 @@
 - 반복 가능한 웨이브 구조
 
 ## 🛠 Tech Stack
-- Unity 2022.x
-- C# (이벤트 시스템, FSM, 코루틴)
+- Unity 2024.6
+- ```csharp 
 - Git / Unity Collaborate
 
 
