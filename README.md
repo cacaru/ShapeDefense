@@ -18,7 +18,6 @@
 - **Render Pipeline**: Universal Render Pipeline (URP) 17.0.4
 - **Language**: C#
 - **Database**: SQLite (Mono.Data.Sqlite)
-- **Ads**: Google Mobile Ads SDK
 - **Target Platform**: Android (640x960 세로 모드)
 
 ## 📱 다운로드
