@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: ff59df8ae701943469508d8384e99310
+guid: beda96d99c45c01418e43e81f6abc135
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -67,12 +67,12 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,8 +93,21 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -109,16 +122,70 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: -64, y: 64}
+      - {x: -64, y: -64}
+      - {x: 64, y: -64}
+      - {x: 64, y: 64}
+    - - {x: -2, y: -49}
+      - {x: -1, y: -46}
+      - {x: -1, y: -42}
+      - {x: 0, y: -41}
+      - {x: 0, y: -26}
+      - {x: -3, y: -21}
+      - {x: -6, y: -20}
+      - {x: -11, y: -20}
+      - {x: -14, y: -21}
+      - {x: -17, y: -24}
+      - {x: -22, y: -28}
+      - {x: -27, y: -28}
+      - {x: -32, y: -24}
+      - {x: -33, y: -21}
+      - {x: -34, y: -20}
+      - {x: -34, y: -11}
+      - {x: -33, y: -10}
+      - {x: -32, y: -5}
+      - {x: -28, y: 2}
+      - {x: -24, y: 8}
+      - {x: -21, y: 13}
+      - {x: -15, y: 22}
+      - {x: -11, y: 27}
+      - {x: -1, y: 43}
+      - {x: 1, y: 40}
+      - {x: 5, y: 33}
+      - {x: 10, y: 27}
+      - {x: 22, y: 9}
+      - {x: 23, y: 6}
+      - {x: 25, y: 4}
+      - {x: 31, y: -7}
+      - {x: 32, y: -13}
+      - {x: 33, y: -17}
+      - {x: 32, y: -18}
+      - {x: 31, y: -24}
+      - {x: 25, y: -28}
+      - {x: 19, y: -27}
+      - {x: 14, y: -22}
+      - {x: 9, y: -20}
+      - {x: 4, y: -20}
+      - {x: -1, y: -24}
+      - {x: -2, y: -27}
+      - {x: -2, y: -40}
+      - {x: -1, y: -41}
+      - {x: -1, y: -46}
+      - {x: 1, y: -50}
+      - {x: -3, y: -50}
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

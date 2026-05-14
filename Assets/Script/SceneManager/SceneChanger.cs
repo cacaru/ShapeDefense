@@ -1,28 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using ShapeDefenseSpace;
+using static ShapeDefenseSpace.GameData;
 
-public class SceneChanger : MonoBehaviour
+public class SceneChanger : Singleton<SceneChanger>
 {
     private RaycastHit2D hit;
     private string move_name;
 
-    private static SceneChanger _instance = null;
+    private bool start_page_checker = true;
+    
+    private readonly string Start_Page_Name = "GameStartScene";
 
-    void Awake()
-    {
-        if (_instance == null) {
-            _instance = this;
-        }
-        // 인스턴스가 존재하는 경우 새로생기는 인스턴스를 삭제한다.
-        else if (_instance != this) {
-            Destroy(gameObject);
-        }
+    private FirstSceneObserver scene_observer;
 
-        DontDestroyOnLoad( _instance );
+    public void StartPageSet() {
+        start_page_checker = true;
     }
 
     void Update()
@@ -34,32 +27,34 @@ public class SceneChanger : MonoBehaviour
             //해당 좌표에 있는 오브젝트 찾기
             hit = Physics2D.Raycast(pos, Vector2.zero, 0f);
 
-            // hit에 걸리는 collider가 있으면 해당 collider의 이름 가져오기
             if ( hit.collider != null ) {
                 move_name = hit.collider.gameObject.name;
                 //Debug.Log(move_name);
                 ChangeScene();
             }
         }
+        // 현재 씬이 첫 씬(GameStartScene) 이라면 first fage setting 켜기
+        
+        if (SceneManager.GetActiveScene().name.Equals(Start_Page_Name) && start_page_checker) {
+            //sceneObserver.enabled = true;
+            start_page_checker = false;
+        }
+        
+        if ( !SceneManager.GetActiveScene().name.Equals(Start_Page_Name) && !start_page_checker) {
+            start_page_checker = true;
+        }
     }
 
     public void ChangeScene() {
         // 클릭된 씬으로 이동
         switch(move_name) {
-            case "UnitPageBtnBg":
-                SceneManager.LoadScene("UnitScene");
-                break;
-
             case "StorePageBtnBg":
                 SceneManager.LoadScene("ShopScene");
                 break;
 
             case "GameStartPageBtnBg":
-                SceneManager.LoadScene("GameStartScene");
-                break;
-
-            case "AchivmentPageBtnBg":
-                SceneManager.LoadScene("AchivementScene");
+                SceneManager.LoadScene(Start_Page_Name);
+                //sceneObserver.enabled = true;
                 break;
 
             case "SettingPageBtnBg":
@@ -67,8 +62,11 @@ public class SceneChanger : MonoBehaviour
                 break;
 
             case "DetailBackBtn":
-                SceneManager.LoadScene("UnitScene");
+                SceneManager.LoadScene(Start_Page_Name);
+                datahub.FromUnitDetail = true;
+                //sceneObserver.enabled = true;
                 break;
         }
     }
+
 }

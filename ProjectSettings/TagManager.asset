@@ -5,6 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Hub
+  - Bullet
+  - Dead
+  - On
+  - Off
+  - Wait
+  - EnemyPoolState
+  - Unit_Active
+  - Unit_Wait
+  - Blusting
+  - Poisoning
+  - CombineTable
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -12,15 +25,15 @@ TagManager:
   - 
   - Water
   - UI
-  - UICover
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Modal
+  - Map
+  - Unit
+  - ExitUILayer
+  - Bullet
+  - EnemyPoolState
+  - Enemy
   - 
   - 
   - 
@@ -44,4 +57,10 @@ TagManager:
     locked: 0
   - name: IconLayer
     uniqueID: 445828627
+    locked: 0
+  - name: Bullet
+    uniqueID: 1302801185
+    locked: 0
+  - name: SelectedUnit
+    uniqueID: 2384036361
     locked: 0

@@ -618,13 +618,13 @@
     },
     "m_PreviewData": {
         "serializedMesh": {
-            "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
+            "m_SerializedMesh": "{\"mesh\":{\"fileID\":10210,\"guid\":\"0000000000000000e000000000000000\",\"type\":0}}",
             "m_Guid": ""
         },
-        "preventRotation": false
+        "preventRotation": true
     },
     "m_Path": "Shader Graphs",
-    "m_GraphPrecision": 1,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -1460,12 +1460,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteLitSubTarget",
-    "m_ObjectId": "3640fa611dc148f7bd96006e2058df5d"
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "38ac977f265f425e853d74c185bc57a1",
     "m_Id": 0,
@@ -1741,7 +1735,7 @@
     "m_ObjectId": "4e06d46fc02849efa58815a6e92727a5",
     "m_Datas": [],
     "m_ActiveSubTarget": {
-        "m_Id": "3640fa611dc148f7bd96006e2058df5d"
+        "m_Id": "97e8dc743ff04c92adf94b033641fbaa"
     },
     "m_AllowMaterialOverride": false,
     "m_SurfaceType": 0,
@@ -2856,6 +2850,12 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalSpriteLitSubTarget",
+    "m_ObjectId": "97e8dc743ff04c92adf94b033641fbaa"
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "97f8c31814324da993016e73fe85fd4a",
     "m_Id": 2,
@@ -3347,7 +3347,7 @@
         "a": 0.0
     },
     "isMainColor": false,
-    "m_ColorMode": 1
+    "m_ColorMode": 0
 }
 
 {
